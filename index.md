@@ -10,7 +10,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 #### Difference with Horizons scanning page
 
-## Effects tracking mode
+## Effects analysis mode
 
 ### Selecting producers experiencing a shock
 
