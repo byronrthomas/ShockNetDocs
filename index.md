@@ -1,16 +1,31 @@
-## Welcome to GitHub Pages
+# ShockNet user documentation
 
 You can use the [editor on GitHub](https://github.com/byronrthomas/ShockNetDocs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-## Setting model assumptions
+## Controls common to all analyses
 
-### Difference with Horizons scanning page
+### Setting model assumptions
 
-## Selecting producers experiencing a shock
+#### Difference with Horizons scanning page
 
-## Selecting producers to protect from a shock
+## Effects tracking mode
+
+### Selecting producers experiencing a shock
+
+### What the analysis means
+
+## Horizon scanning mode
+
+### Selecting producers to protect from a shock
+
+### What the analysis means
+
+## Group analysis mode
+
+### What the analysis means
+
 
 ### Markdown
 
