@@ -4,6 +4,14 @@ You can use the [editor on GitHub](https://github.com/byronrthomas/ShockNetDocs/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+## Setting model assumptions
+
+### Difference with Horizons scanning page
+
+## Choosing producers experiencing a shock
+
+## Choosing producers to protect from a shock
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
