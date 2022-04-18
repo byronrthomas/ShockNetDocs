@@ -8,9 +8,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Difference with Horizons scanning page
 
-## Choosing producers experiencing a shock
+## Selecting producers experiencing a shock
 
-## Choosing producers to protect from a shock
+## Selecting producers to protect from a shock
 
 ### Markdown
 
