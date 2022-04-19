@@ -169,7 +169,7 @@ You have the option to select whether you wish to see groups of countries that b
 
 The analysis plots the affected countries onto a world-map as a visual reference. The countries in the same group under the current assumptions, are plotted with the same colour:
 
-[Groups analysis output](./GroupsAnalysisOutput.png)
+![Groups analysis output](./GroupsAnalysisOutput.png)
 
 Any countries not forming a group with any other under the current assumptions are shown with a white bubble marker. If you hover over any country, you will see the country codes of the other countries in the same group.
 
