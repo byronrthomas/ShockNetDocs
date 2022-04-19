@@ -43,6 +43,8 @@ When you adjust assumptions, you use the controls on the left of the page, and c
 
 The settings you can adjust are described below.
 
+**IMPORTANT NOTE**: when you update assumptions the analysis you are viewing does not automatically update itself, you have to manually click the "Run analysis" button again if you want it to update.
+
 #### What each threshold / control means
 
 Thresholds can be set that affect how shocks are assumed to pass between producers:
