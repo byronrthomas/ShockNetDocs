@@ -96,11 +96,11 @@ Once you have setup the producers that you would like to simulate a supply shock
 
 ### Analysis output
 
-The analysis plots the affected countries onto a world-map as a visual reference. They are colour-coded by the amount of output that critical industries of the country receiving a shock account for. If you hover over any country, link or bubble, you will see details about it. 
+The analysis plots the affected countries onto a world-map as a visual reference. They are colour-coded by the amount of output that critical industries of the country receiving a shock account for. If you hover over any country, link or bubble marker, you will see details about it. 
 
 ![Effects mode map](./EffectsModeOutput.png)
 
-All countries that will a shock to some critical industry of theirs under these settings will be coloured a shade of pink/red. All countries not receiving a shock to their critical industries will be left green. If shocks transfer within one of these countries, without affecting a critical industry, a red bubble is drawn on the country.
+All countries that will a shock to some critical industry of theirs under these settings will be coloured a shade of pink/red. All countries not receiving a shock to their critical industries will be left green. If shocks transfer within one of these countries, without affecting a critical industry, a red bubble marker is drawn on the country.
 
 If you click on any country, you will see details on the chain of shocks that the model predicts in the window below.
 
@@ -163,37 +163,16 @@ Of these, we can see that eliminating the use of Petrol / Coal products by the T
 
 If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
-### What the analysis means
+Once [assumptions are set](#setting-model-assumptions) the groups analysis mode allows you to ask "under these assumptions, which countries are likeliest to pass shocks to and from each other".
 
+You have the option to select whether you wish to see groups of countries that both pass shocks to each other AND receive shocks from each other (**STRONG** groups) or simply countries that can either pass shocks to each other AND/OR receive shocks from each other (**WEAK** groups).
 
-### Markdown
+The analysis plots the affected countries onto a world-map as a visual reference. The countries in the same group under the current assumptions, are plotted with the same colour:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Groups analysis output](./GroupsAnalysisOutput.png)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/byronrthomas/ShockNetDocs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Any countries not forming a group with any other under the current assumptions are shown with a white bubble marker. If you hover over any country, you will see the country codes of the other countries in the same group.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For more info about ShockNet, refer to the [Github repo](https://github.com/byronrthomas/shocknet)
