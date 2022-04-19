@@ -70,13 +70,11 @@ And you set assumptions that say a shock transfers if an input that is at least 
 
 All further analysis will happen based on this new shock transfer graph, until the assumptions are changed again (which causes all of these links to be deleted and replaced with the links that meet the new assumptions). The meaning of a link in this new graph is "a shock can potentially pass between these entities" or equivalently "if a shock occurs to the source of the link, it will pass to the destination of the link."
 
-#### Difference with Horizons scanning page
-
 ## Effects analysis mode
 
 If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
-Once [assumptions are set](#setting-model-assumptions) the effects analysis mode allows us to ask "under these assumptions, if a crisis begins with some set of supply shocks, what countries will experience a crisis" and to drill into how the model predicts various chains of shocks.
+Once [assumptions are set](#setting-model-assumptions) the effects analysis mode allows you to ask "under these assumptions, if a crisis begins with some set of supply shocks, what countries will experience a crisis" and to drill into how the model predicts various chains of shocks.
 
 ### Selecting producers experiencing a shock
 
@@ -116,9 +114,50 @@ There is also a panel showing all of the shock chains that the model predicted, 
 
 If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
-### Selecting producers to protect from a shock
+Once [assumptions are set](#setting-model-assumptions) the horizon scanning mode allows you to ask "under these assumptions, how might a future crisis reach a producer I would like to protect, and how might that be avoided".
 
-### What the analysis means
+### Selecting producers you would like to protect
+
+You select the producers that you wish to protect from a crisis. The controls are laid out with the inputs to the left, and the currently selected list of producers to the right. You can add either all of the critical producers from a single country (i.e. I don't know which industries to protect, help me work out what's important to the country I want to potect):
+
+![Adding all critical producers of a country](./HorizonsAddAll.png)
+
+Or, more likely a single producer of a country (e.g. I know that Oil production is crucial to Saudi Arabia and wish to protect it) - you can select any producer, even those that aren't critical industries of a country:
+
+![Adding a single producer](./HorizonsAddSingle.png)
+
+You can reset the current selection and start again if you make a mistake with your selections.
+
+Once you have setup the producers to protect, press "Run analysis" to show how the model predicts the crisis can reach your selected producers. At a conceptual level, this is looking at the possible chains of links from any other producers to your producers, e.g. in the running example if "Clothes production of Guatemala" is selected then the analysis finds the paths shown in red:
+
+![Horizons mode graph](./HorizonsMode.png)
+
+### Analysis output
+
+The analysis shows the network of shocks, predicted to reach the selected producers under the current assumptions. The nodes are producers, colour-coded by the country they are located in, the links represent the transfer of shocks. If you hover over a producer or link, you can see more detail about it.
+
+The producers to protect are always shown at the top of the diagram, e.g. one with just one selected:
+
+![Horizons mode network diagram showing single producer](./HorizonsModeNetworkSingle.png)
+
+Whereas with multiple selected (e.g. all criticial industries of India under the current assumptions):
+
+![Horizons mode network diagram showing many producers](./HorizonsModeNetworkMultiple.png)
+
+The analysis also tries to highlight what can be done to protect a particular producer, from the point of view of a policy maker of the country where that producer is located. It assumes the following:
+
+- The policymaker can only influence shock transfers that happen in their country
+- The monetary value of the flow causing the shock transfer, gives some indication of how possible replacing / reducing that flow might be
+- The more shock chains that can be eliminated by eliminating the flow, the better
+- The non-produceable inputs (Land, Labour, Natural Resources and Capital) will not be easy to reduce / replace
+
+Hence the details view, shows for each producer to protect, the local shock transfers involving produceable inputs, ordered by the value of the flow, and with details on how many shock chains that can reach the producer would be eliminated by removing that shock transfer (reducing / replacing that flow with a local supply or a substituted input).
+
+![Horizons mode transfer analysis](./HorizonsModeTransfer.png)
+
+So for example, in the example where we are investigating the six critical industries of India, the table shows us there is one only local flow is involved in a shock chain that can reach Construction, three for the Transport sector, and there are none for the four remaining critical industries.
+
+Of these, we can see that eliminating the use of Petrol / Coal products by the Transport sector would isolate the Transport sector from the most incoming shock chains, whereas the smallest shock transfer affecting Transport is the use of Indian Oil by the Indian Petrol / Coal products sector, so this could the easiest flow to reduce or substitute, but it will have little impact on reducing the overall risk to the Transport sector.
 
 ## Group analysis mode
 
