@@ -118,7 +118,7 @@ Once [assumptions are set](#setting-model-assumptions) the horizon scanning mode
 
 ### Selecting producers you would like to protect
 
-You select the producers that you wish to protect from a crisis. The controls are laid out with the inputs to the left, and the currently selected list of producers to the right. You can add either all of the critical producers from a single country (i.e. I don't know which industries to protect, help me work out what's important to the country I want to potect):
+You select the producers that you wish to protect from a crisis. The controls are laid out with the inputs to the left, and the currently selected list of producers to the right. You can add either all of the critical producers from a single country (i.e. I don't know which industries to protect, help me work out what's important to the country I want to protect):
 
 ![Adding all critical producers of a country](./HorizonsAddAll.png)
 
@@ -128,7 +128,7 @@ Or, more likely a single producer of a country (e.g. I know that Oil production 
 
 You can reset the current selection and start again if you make a mistake with your selections.
 
-Once you have setup the producers to protect, press "Run analysis" to show how the model predicts the crisis can reach your selected producers. At a conceptual level, this is looking at the possible chains of links from any other producers to your producers, e.g. in the running example if "Clothes production of Guatemala" is selected then the analysis finds the paths shown in red:
+Once you have set up the producers to protect, press "Run analysis" to show how the model predicts the crisis can reach your selected producers. At a conceptual level, this is looking at the possible chains of links from any other producers to your producers, e.g. in the running example if "Clothes production of Guatemala" is selected then the analysis finds the paths shown in red:
 
 ![Horizons mode graph](./HorizonsMode.png)
 
@@ -151,13 +151,13 @@ The analysis also tries to highlight what can be done to protect a particular pr
 - The more shock chains that can be eliminated by eliminating the flow, the better
 - The non-produceable inputs (Land, Labour, Natural Resources and Capital) will not be easy to reduce / replace
 
-Hence the details view, shows for each producer to protect, the local shock transfers involving produceable inputs, ordered by the value of the flow, and with details on how many shock chains that can reach the producer would be eliminated by removing that shock transfer (reducing / replacing that flow with a local supply or a substituted input).
+Hence the details view, shows for each producer to protect, the local shock transfers involving produceable inputs, ordered by the value of the flow, and with details on how many shock chains that reach the producer would be eliminated by removing that shock transfer (reducing / replacing that flow with a local supply or a substituted input).
 
 ![Horizons mode transfer analysis](./HorizonsModeTransferAnalysis.png)
 
-So for example, in the example where we are investigating the six critical industries of India, the table shows us there is one only local flow is involved in a shock chain that can reach Construction, three for the Transport sector, and there are none for the four remaining critical industries.
+So for example, if we are investigating six critical industries of India under some assumptions, the table shows us there is one only local flow that is involved in a shock chain that can reach Construction, three within chains that can reach the Transport sector, and there are none for the four remaining critical industries.
 
-Of these, we can see that eliminating the use of Petrol / Coal products by the Transport sector would isolate the Transport sector from the most incoming shock chains, whereas the smallest shock transfer affecting Transport is the use of Indian Oil by the Indian Petrol / Coal products sector, so this could the easiest flow to reduce or substitute, but it will have little impact on reducing the overall risk to the Transport sector.
+Of these, we can see that eliminating the use of Petrol / Coal products by the Transport sector would isolate the Transport sector from the most incoming shock chains, whereas the smallest shock transfer in a chain that can reach the Transport sector, is the use of Indian Oil by the Indian Petrol / Coal products sector, so this could the easiest flow to reduce or substitute (but it will have little impact on reducing the overall risk to the Transport sector given it only eliminates 2 chains out of 19).
 
 ## Group analysis mode
 
