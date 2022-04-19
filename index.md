@@ -153,7 +153,7 @@ The analysis also tries to highlight what can be done to protect a particular pr
 
 Hence the details view, shows for each producer to protect, the local shock transfers involving produceable inputs, ordered by the value of the flow, and with details on how many shock chains that can reach the producer would be eliminated by removing that shock transfer (reducing / replacing that flow with a local supply or a substituted input).
 
-![Horizons mode transfer analysis](./HorizonsModeTransfer.png)
+![Horizons mode transfer analysis](./HorizonsModeTransferAnalysis.png)
 
 So for example, in the example where we are investigating the six critical industries of India, the table shows us there is one only local flow is involved in a shock chain that can reach Construction, three for the Transport sector, and there are none for the four remaining critical industries.
 
