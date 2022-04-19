@@ -92,7 +92,7 @@ You can reset the current selection and start again if you make a mistake with y
 
 **NOTE**: there are some pseudo-producers available to select as the starting point of the crisis, that represent non-producable inputs of Land, Capital, Natural Resources, Skilled and Unskilled Labour. Although nobody strictly produces these, the purpose of leaving them in is to simulate hypotheticals like "if there were some economic condition that massively affected the availability of investment Capital in China, what might happen" or "if India institutes a policy that makes land much harder to acquire, what might happen."
 
-Once you have setup the producers that you would like to simulate a supply shock for, press "Run analysis" to show how the model predicts the crisis will spread. At a conceptual level, this is looking at the links from your producers to countries, e.g. in the running example if "Textiles production of Korea" is selected then the analysis finds the path shown:
+Once you have setup the producers that you would like to simulate a supply shock for, press "Run analysis" to show how the model predicts the crisis will spread. At a conceptual level, this is looking at the links from your producers to countries, e.g. in the running example if "Textiles production of Korea" is selected then the analysis finds the path shown in red:
 
 ![Effects mode graph](./EffectsMode.png)
 
