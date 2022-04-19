@@ -35,7 +35,7 @@ ShockNet allows the user to update the assumptions over how significant a flow n
 
 ### Setting model assumptions
 
-If ShockNet is completely new to you, I recommend to starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
+If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
 When you adjust assumptions, you use the controls on the left of the page, and click the "Update model assumptions" button. After a short wait, you should see the new values reflected on the right hand side of the page, as below.
 
@@ -59,26 +59,62 @@ Thresholds can also be set that affect how shocks are assumed to pass from produ
 
 **NOTE**: for horizon scanning mode, the focus is on producers that you have a desire to protect, and shocks to countries are not a part of the analysis, so the critical industry settings are only used when you choose to investigate how to protect "All critical industries of countryX."
 
-#### The effect of the assumptions
-In terms of the graph, clicking the "Update model assumptions" button causes some new categories of edge to be written, and then all futher analyses on how shocks transfer only use these edges. So for example, if the starting graph looks like:
+#### The effect of the assumptions - a shock transfer graph
+In terms of the graph, clicking the "Update model assumptions" button causes some new categories of link to be written, and then all futher analyses only happen using these new categories of links. So for example, if the starting graph looks like:
 
 ![Starting graph](./InitialGraphModel.png)
 
-And you set assumptions that say 
+And you set assumptions that say a shock transfers if an input that is at least 10% of a producer's total input is shocked or an import that is at least 10% of total imports of the product into the country are shocked (i.e. x% = 10, y% = 10). And you set assumptions that a critical industry is one that produces at least 10% of national output (i.e. z1% = 10, z2% = 0, z3% = 0, z4% = 0, must meet ALL thresholds). Then the new graph (showing only the new categories of links) will look like:
+
+![Shock transfer graph](./ShockGraph.png)
+
+All further analysis will happen based on this new shock transfer graph, until the assumptions are changed again (which causes all of these links to be deleted and replaced with the links that meet the new assumptions). The meaning of a link in this new graph is "a shock can potentially pass between these entities" or equivalently "if a shock occurs to the source of the link, it will pass to the destination of the link."
 
 #### Difference with Horizons scanning page
 
 ## Effects analysis mode
 
-If ShockNet is completely new to you, I recommend to starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
+If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
+
+Once [assumptions are set](#setting-model-assumptions) the effects analysis mode allows us to ask "under these assumptions, if a crisis begins with some set of supply shocks, what countries will experience a crisis" and to drill into how the model predicts various chains of shocks.
 
 ### Selecting producers experiencing a shock
 
-### What the analysis means
+You select the producers whose supply shock begin the crisis you want to model. The controls are laid out with the inputs to the left, and the currently selected list of producers to the right. You can add either all of the producers from a single country (e.g. simulating a widespread embargo of that country):
+
+![Adding all producers of a country](./EffectsAddAll.png)
+
+Or, more likely a single producer of a country (e.g. all of the rice output from Nepal is affected):
+
+![Adding a single producer](./EffectsAddSingle.png)
+
+You can reset the current selection and start again if you make a mistake with your selections.
+
+**NOTE**: there are some pseudo-producers available to select as the starting point of the crisis, that represent non-producable inputs of Land, Capital, Natural Resources, Skilled and Unskilled Labour. Although nobody strictly produces these, the purpose of leaving them in is to simulate hypotheticals like "if there were some economic condition that massively affected the availability of investment Capital in China, what might happen" or "if India institutes a policy that makes land much harder to acquire, what might happen."
+
+Once you have setup the producers that you would like to simulate a supply shock for, press "Run analysis" to show how the model predicts the crisis will spread. At a conceptual level, this is looking at the links from your producers to countries, e.g. in the running example if "Textiles production of Korea" is selected then the analysis finds the path shown:
+
+![Effects mode graph](./EffectsMode.png)
+
+### Analysis output
+
+The analysis plots the affected countries onto a world-map as a visual reference. They are colour-coded by the amount of output that critical industries of the country receiving a shock account for. If you hover over any country, link or bubble, you will see details about it. 
+
+![Effects mode map](./EffectsModeOutput.png)
+
+All countries that will a shock to some critical industry of theirs under these settings will be coloured a shade of pink/red. All countries not receiving a shock to their critical industries will be left green. If shocks transfer within one of these countries, without affecting a critical industry, a red bubble is drawn on the country.
+
+If you click on any country, you will see details on the chain of shocks that the model predicts in the window below.
+
+![Effects mode shock details](./EffectsShockDetails.png)
+
+There is also a panel showing all of the shock chains that the model predicted, ordered by the length of the chain from longest to shortest.
+
+![Effects mode shock chains](./EffectsShockChains.png)
 
 ## Horizon scanning mode
 
-If ShockNet is completely new to you, I recommend to starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
+If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
 ### Selecting producers to protect from a shock
 
@@ -86,7 +122,7 @@ If ShockNet is completely new to you, I recommend to starting from the section [
 
 ## Group analysis mode
 
-If ShockNet is completely new to you, I recommend to starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
+If ShockNet is completely new to you, I recommend starting from the section [What is Shocknet?](#what-is-shocknet) before returning here.
 
 ### What the analysis means
 
